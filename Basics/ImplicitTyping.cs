@@ -55,3 +55,16 @@ birds;
 , Name: Canary, Color: Yellow, Sightings: 99                                                                
  }
 */
+
+foreach(var bird in birds)                                                                          
+{                                                                                                   
+    Console.WriteLine(bird.Name);                                                                   
+}
+
+/*
+Cardinal                                                                                                    
+Dove                                                                                                        
+Robin                                                                                                       
+Blue Jay                                                                                                    
+Canary
+*/
