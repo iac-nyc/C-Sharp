@@ -68,3 +68,15 @@ Robin
 Blue Jay                                                                                                    
 Canary
 */
+
+
+
+// LINQ
+from b in birds                                                                                     
+where b.Color == "Red"                                                                              
+select b;   
+/*
+{ Name: Cardinal, Color: Red, Sightings: 3                                                                  
+, Name: Robin, Color: Red, Sightings: 5                                                                     
+ }  
+ */
