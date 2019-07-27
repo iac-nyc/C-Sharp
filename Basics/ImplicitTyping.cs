@@ -104,3 +104,19 @@ select new { BirdName = b.Name, BirdColor = b.Color};
 // { { BirdName = Cardinal, BirdColor = Red }, { BirdName = Robin, BirdColor = Red } }  
 
 
+
+// Anonymous tyes
+var anonymousPidgeon = new { Name ="Pidgeon", Color="White", Sightings=9};                                           
+var anonymousCrow = new { Name="Crow", Color="Black", Sightings = 333};                                              
+                                             
+anonymousPidgeon.GetType() == anonymousCrow.GetType();                                                               
+// true    
+
+
+birds.Add(new Bird{                                                                                                  
+    Name = anonymousCrow.Name,                                                                                       
+    Color = anonymousCrow.Color,                                                                                     
+    Sightings = anonymousCrow.Sightings                                                                              
+}); 
+
+
