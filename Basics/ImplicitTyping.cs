@@ -94,3 +94,13 @@ where b.Color == "Red"
 select new { b.Name, b.Color };  //{ { Name = Cardinal, Color = Red }, { Name = Robin, Color = Red } }    
 
 
+
+
+
+// Specify property name
+from b in birds                                                                                                                                                                              
+where b.Color =="Red"                                                                                                                                                                        
+select new { BirdName = b.Name, BirdColor = b.Color};                                                                                                                                        
+// { { BirdName = Cardinal, BirdColor = Red }, { BirdName = Robin, BirdColor = Red } }  
+
+
