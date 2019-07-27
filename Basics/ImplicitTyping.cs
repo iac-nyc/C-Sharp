@@ -80,3 +80,17 @@ select b;
 , Name: Robin, Color: Red, Sightings: 5                                                                     
  }  
  */
+
+
+
+from b in birds                                                                                     
+where b.Color =="Red"                                                                               
+select b.Name;  // { "Cardinal", "Robin" }
+
+
+// Projecting LINQ Anonymous Types
+from b in birds                                                                                     
+where b.Color == "Red"                                                                              
+select new { b.Name, b.Color };  //{ { Name = Cardinal, Color = Red }, { Name = Robin, Color = Red } }    
+
+
