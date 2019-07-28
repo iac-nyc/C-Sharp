@@ -137,3 +137,18 @@ select b.Name;
 // { "Robin", "Dove", "Crow", "Cardinal", "Canary", "Blue Jay" }  
 
 
+// Descending order with Specific property
+from b in birds                                                                                                      
+orderby b.Color, b.Sightings descending                                                                              
+select new { b.Name, b.Sightings };                                                                                  
+/*
+{ { Name = Crow, Sightings = 333 }, 
+  { Name = Blue Jay, Sightings = 1 }, 
+  { Name = Robin, Sightings = 5 }, 
+  { Name = Cardinal, Sightings = 3 }, 
+  { Name = Dove, Sightings = 2 }, 
+  { Name = Canary, Sightings = 99 } }     
+*/
+
+
+
