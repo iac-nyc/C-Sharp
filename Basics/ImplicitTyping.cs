@@ -128,3 +128,12 @@ orderby b.Name
 select b.Name;                                                                                                       
 // { "Blue Jay", "Canary", "Cardinal", "Crow", "Dove", "Robin" } 
 
+
+
+// Descending order
+from b in birds                                                                                                      
+orderby b.Name descending                                                                                            
+select b.Name;                                                                                                       
+// { "Robin", "Dove", "Crow", "Cardinal", "Canary", "Blue Jay" }  
+
+
