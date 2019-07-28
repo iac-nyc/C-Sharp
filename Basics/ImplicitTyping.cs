@@ -120,3 +120,11 @@ birds.Add(new Bird{
 }); 
 
 
+
+///Ordering//
+
+from b in birds                                                                                                      
+orderby b.Name                                                                                                       
+select b.Name;                                                                                                       
+// { "Blue Jay", "Canary", "Cardinal", "Crow", "Dove", "Robin" } 
+
