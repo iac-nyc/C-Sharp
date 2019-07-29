@@ -165,3 +165,18 @@ White 2
 Blue 1
 Black 1
 */
+
+//
+// into keyword
+//
+from b in birds
+group b by b.Color into birdsByColor
+where birdsByColor.Count() > 1
+select new { Color = birdsByColor.Key, Count = birdsByColor.Count() };
+
+/*
+{
+{Color = Red, Count = 2},
+{Color = White, Count = 2}
+}
+*/
