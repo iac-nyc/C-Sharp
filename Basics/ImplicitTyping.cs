@@ -151,4 +151,17 @@ select new { b.Name, b.Sightings };
 */
 
 
+// Group By 
+var birdsByColor = from b in birds 
+                   group b by b.Color;
 
+foreach(var bird in birdsByColor)
+{
+    Consoel.WriteLine(bird.Key + " " + bird.Count());
+}
+/*
+Red 2
+White 2
+Blue 1
+Black 1
+*/
