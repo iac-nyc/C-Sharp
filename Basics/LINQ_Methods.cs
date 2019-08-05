@@ -57,3 +57,5 @@ but they are called as if they were instance methods on the extended type.
 //
 
 birds.Where( (b) => b.Color == "Red"):
+
+birds.Where( b => b.Color == "Red").OrderBy (b => b.Name);
