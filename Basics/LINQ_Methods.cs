@@ -63,3 +63,7 @@ birds.Where( b => b.Color == "Red").OrderBy (b => b.Name);
 birds.OrderByDescending ( b => b.Color );
 
 birds.Select ( b => new {b.Name, b.Color});
+
+// ThenBy - preserve the order of the list
+
+birds.OrderBy( b => b.Name ).ThenBy ( b => b.Sightings);
