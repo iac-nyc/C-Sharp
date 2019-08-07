@@ -62,3 +62,12 @@ if ( !birds.Any (b => b.Name == "Eagle"))
 {
     birds.Add(new Bird { Name = "Eagle"});
 }
+
+
+
+var sparrow = new Bird { Name = "Sparrow", Color = "Brown"};
+
+if( !birds.Contains(sparrow))
+{
+    birds.Add( new Bird { Name = "Sparrow", Color = "Brown"});
+}
