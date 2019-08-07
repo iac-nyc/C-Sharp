@@ -71,3 +71,5 @@ if( !birds.Contains(sparrow))
 {
     birds.Add( new Bird { Name = "Sparrow", Color = "Brown"});
 }
+
+birds.All( b => b.Name != "Sparrow");  //false
