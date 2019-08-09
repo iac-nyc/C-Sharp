@@ -65,3 +65,7 @@ birds.Where(b => b.Name == "Robin").Single();// Name:Robin, Color:Red, Sightings
 birds.Single ( b => b.Name == "Dove"); // InvalidOperationException
 
 birds.SingleOrDefault( b => b.Name == "Chickadee"); // null
+
+birds.First(); // Name: Cardinal, Color:Red, Sightings: 3
+
+birds.First(b => b.Color =="Red");// if no match there will exception
