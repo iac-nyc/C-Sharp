@@ -60,5 +60,8 @@ Single<TSource>(IEnumerable<TSource>)
 Returns the only element of a sequence, and throws an exception if there is not exactly one element in the sequence.
 */
 
-birds.Where(b => b.Name == "Dove").Single();
-birds.Single ( b => b.Name == "Dove");
+birds.Where(b => b.Name == "Robin").Single();// Name:Robin, Color:Red, Sightings: 5
+
+birds.Single ( b => b.Name == "Dove"); // InvalidOperationException
+
+birds.SingleOrDefault( b => b.Name == "Chickadee"); // null
