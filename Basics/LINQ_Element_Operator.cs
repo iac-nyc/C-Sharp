@@ -69,3 +69,4 @@ birds.SingleOrDefault( b => b.Name == "Chickadee"); // null
 birds.First(); // Name: Cardinal, Color:Red, Sightings: 3
 
 birds.First(b => b.Color =="Red");// if no match there will exception
+birds.FirstOrDefault(b => b.Color =="Chickadee"); // null
