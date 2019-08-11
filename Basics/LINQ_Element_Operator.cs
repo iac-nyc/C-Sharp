@@ -80,3 +80,6 @@ birds.Last(); // Name: Blue Jay, Color:Blue, Sightings: 1
 int[] numbers = {0,1,2,3};
 
 numbers.ElementAt(2); // 2
+
+
+numbers.ElementAtOrDefault(899): // null
