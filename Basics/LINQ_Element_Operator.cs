@@ -83,3 +83,9 @@ numbers.ElementAt(2); // 2
 
 
 numbers.ElementAtOrDefault(899): // null
+
+
+////////////////////
+////Partitioning////
+////////////////////
+birds.OrderBy(b => b.Name.Length).Take(3);
