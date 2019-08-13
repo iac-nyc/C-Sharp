@@ -89,3 +89,31 @@ numbers.ElementAtOrDefault(899): // null
 ////Partitioning////
 ////////////////////
 birds.OrderBy(b => b.Name.Length).Take(3);
+
+/*
+Enumerable.Skip(IEnumerable<TSource>, Int32) Method
+*/
+
+birds.OrderBy(b => b.Names.length).Skip(3).Take(3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
