@@ -57,6 +57,12 @@ Enumerable.Skip(IEnumerable<TSource>, Int32) Method
 
 birds.OrderBy(b => b.Names.length).Skip(3).Take(3);
 
+/*
+TakeWhile<TSource>(IEnumerable<TSource>, Func<TSource,Boolean>)
+*/
+
+birds.OrderBy(b => b.Name.Length).TakeWhile(b =>b.Name.Length < 6);
+
 
 
 
