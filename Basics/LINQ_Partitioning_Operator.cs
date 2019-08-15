@@ -63,6 +63,15 @@ TakeWhile<TSource>(IEnumerable<TSource>, Func<TSource,Boolean>)
 
 birds.OrderBy(b => b.Name.Length).TakeWhile(b =>b.Name.Length < 6);
 
+/*
+SkipWhile<TSource>(IEnumerable<TSource>, Func<TSource,Boolean>)
+
+Bypasses elements in a sequence as long as a specified condition is true and then returns the remaining elements.
+*/
+
+
+birds.OrderBy(b => b.Name.Length).SkipWhile(b =>b.Name.Length < 6);
+
 
 
 
