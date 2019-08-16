@@ -46,7 +46,7 @@ namespace BirdWatcher
 
 ////////////////////
 ////JOINS///////////
-////////////////////"
+////////////////////
 
 var colors = new List<string> {"Red", "Blue", "Purple"};
 
@@ -54,6 +54,29 @@ var favoriteBirds = from b in birds
                     join c in colors on b.Color equals c
                     select b;
 favoriteBirds;
+/*
+{
+Name: Cardinal, Color: Red, Sightings: 3,
+Name: Robin, Color: Red, Sightings: 5,
+Name: Blue Jay, Color: Blue, Sightings: 1
+}
+*/
+
+////////////////////////////////
+// IEnumerable<T> 
+// The first sequence to join.
+///////////////////////////////
+/* outer.Join(inner,
+             outerKeySelector,
+             innerKeySelector,
+             resultSelector);
+
+*/
+///////////////////////////////////
+var favBirds = birds.Join(colors,
+                         b => b.Color,
+                         c => c,
+                         (bird, color) => bird);
 /*
 {
 Name: Cardinal, Color: Red, Sightings: 3,
