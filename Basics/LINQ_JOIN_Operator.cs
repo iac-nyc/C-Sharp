@@ -100,7 +100,20 @@ Color = Red, Bird = Name: Blue Jay, Color: Blue, Sightings: 1
 */                   
 
 
+/*
+GroupJoin<TOuter,TInner,TKey,TResult>(IEnumerable<TOuter>, IEnumerable<TInner>, Func<TOuter,TKey>, Func<TInner,TKey>, Func<TOuter,IEnumerable<TInner>,TResult>)
 
+Correlates the elements of two sequences based on equality of keys and groups the results. The default equality comparer is used to compare keys.
+*/
+
+var groupedBirds = colors.GroupJoin(birds,
+                                   c => c,
+                                   b => b.Color,
+                                   (color, bird) => new { Color = color, Birds = bird});
+groupedBirds.Select( g => g.Color);
+/*
+{"Red", "Blue", "Purple"}
+*/
 
 
 
