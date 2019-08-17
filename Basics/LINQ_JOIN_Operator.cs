@@ -115,7 +115,20 @@ groupedBirds.Select( g => g.Color);
 {"Red", "Blue", "Purple"}
 */
 
+groupedBirds.Where(g => g.Color == "Purple").Select(g => g.birds);
+/*
+{{ }}
+*/
 
+groupedBirds.SelectMany(g => g.Birds);
+
+/*
+{
+Name: Cardinal, Color: Red, Sightings: 3,
+Name: Robin, Color: Red, Sightings: 5,
+Name: Blue Jay, Color: Blue, Sightings: 1
+}
+*/
 
 
 
