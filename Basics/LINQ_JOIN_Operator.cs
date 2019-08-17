@@ -84,8 +84,20 @@ Name: Robin, Color: Red, Sightings: 5,
 Name: Blue Jay, Color: Blue, Sightings: 1
 }
 */
-                    
-                    
+
+// An Enumerable of Anonymously typed objects
+var favBirds = birds.Join(colors,
+                         b => b.Color,
+                         c => c,
+                        (bird, color) => new { Color = color, Bird = bird});
+
+ /*
+{{
+Color = Red, Bird = Name: Cardinal, Color: Red, Sightings: 3,
+Color = Red, Bird = Name: Robin, Color: Red, Sightings: 5,
+Color = Red, Bird = Name: Blue Jay, Color: Blue, Sightings: 1
+}}
+*/                   
 
 
 
