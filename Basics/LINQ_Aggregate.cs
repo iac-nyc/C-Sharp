@@ -52,3 +52,6 @@ birds.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Count = g.Count()})
 { Color = Yellow, Count = 1}
 }
 */
+
+birds.Sum(b => b.Sightings);
+// 11
