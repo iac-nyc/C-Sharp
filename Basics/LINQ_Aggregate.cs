@@ -55,3 +55,14 @@ birds.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Count = g.Count()})
 
 birds.Sum(b => b.Sightings);
 // 11
+
+birds.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Sightings = g.Sum(b => b.Sightings )});
+
+/*
+{
+{Color = Red, Sightings = 8},
+{Color = White, Sightings = 2},
+{Color = Yello, Sightings = 0},
+{Color = Blue, Sightings = 1}
+}
+*/
