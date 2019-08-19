@@ -72,5 +72,7 @@ birds.Average(b => b.Sightings);
 
 birds.Min(b => b.Sightings);
 
+birds.Max(b => b.Sightings);
+
 
     
