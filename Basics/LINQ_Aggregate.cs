@@ -70,4 +70,7 @@ birds.GroupBy(b => b.Color).Select(g => new { Color = g.Key, Sightings = g.Sum(b
 
 birds.Average(b => b.Sightings);
 
+birds.Min(b => b.Sightings);
+
+
     
