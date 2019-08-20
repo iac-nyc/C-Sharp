@@ -45,7 +45,11 @@ namespace BirdWatcher
 // LINQ using Distinct, Union, Intersect, Except and Concat.
 
 birds.Select(b => b.Color).Distinct();
-// {"Red", "White", "Blue", "Yellow"} 
+// {"Red", "White", "Blue", "Yellow"}
+
+var colors = new List<string>{"Pink", "Blue", "Teal"};
+colors.Except(birds.Select(b => b.Color).Distinct());
+// {"Pink", "Teal"}
 
 
     
