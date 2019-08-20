@@ -51,5 +51,8 @@ var colors = new List<string>{"Pink", "Blue", "Teal"};
 colors.Except(birds.Select(b => b.Color).Distinct());
 // {"Pink", "Teal"}
 
+colors.Union(birds.Select(b => b.Color).Distinct());
+// {"Pink", "Blue","Teal","Red","White","Yellow"}
+
 
     
