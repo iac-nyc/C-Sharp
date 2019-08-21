@@ -57,5 +57,8 @@ colors.Union(birds.Select(b => b.Color).Distinct());
 colors.Intersect(birds.Select(b => b.Color).Distinct());
 //{"Blue}
 
+colors.Concat(birds.Select(b =>b.Color));
+//{"Pink","Blue","Teal","Red","White","Red","Yellow","Blue"}
+
 
     
