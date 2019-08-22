@@ -50,5 +50,10 @@ numbers;
 {0,1,2,3,4,5,6,7,8,9}
 */
 
+Enumerable.Repeat("LINQ is awesome!",3);
+/*
+{"LINQ is awesome!","LINQ is awesome!","LINQ is awesome!"}
+*/
+
 
     
