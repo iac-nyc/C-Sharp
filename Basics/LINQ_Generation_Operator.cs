@@ -56,4 +56,14 @@ Enumerable.Repeat("LINQ is awesome!",3);
 */
 
 
+var blankBirds = Enumerable.Repeat(new Bird(), 2);
+/*
+{
+Name: , Color: , Sightings: 0,
+Name: , Color: , Sightings: 0
+}
+*/
+
+
+
     
