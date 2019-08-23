@@ -68,6 +68,7 @@ var number = Enumerable.Empty<int>();
 number;
 // { }
 
-
+number.DefaultIfEmpty();
+// { 0 }
 
     
