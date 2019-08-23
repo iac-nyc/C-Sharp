@@ -60,3 +60,11 @@ Name: Cardinal, Color: Red, Sightings: 3,
 Name: Robin, Color: Red, Sightings: 5
 }
 */    
+
+redBirds.ToArray();
+/*
+{
+Name: Cardinal, Color: Red, Sightings: 3,
+Name: Robin, Color: Red, Sightings: 5
+}
+*/
