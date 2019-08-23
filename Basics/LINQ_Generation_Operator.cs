@@ -64,6 +64,10 @@ Name: , Color: , Sightings: 0
 }
 */
 
+var number = Enumerable.Empty<int>();
+number;
+// { }
+
 
 
     
