@@ -74,5 +74,7 @@ birds.Min(b => b.Sightings);
 
 birds.Max(b => b.Sightings);
 
+birds.SelectMany(b => b.Sightings).Count();
+
 
     
