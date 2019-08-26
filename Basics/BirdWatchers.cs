@@ -1,0 +1,1 @@
+birds.SelectMany(b => b.Sightings).Select(s => s.Place.Country);
