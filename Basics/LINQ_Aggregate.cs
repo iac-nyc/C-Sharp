@@ -76,5 +76,11 @@ birds.Max(b => b.Sightings);
 
 birds.SelectMany(b => b.Sightings).Count();
 
+//Average 
+birds.SelectMany(b => b.Sightings).Count() / birds.Count();
+birds.Select(b => b.Sightings.Count()).Average();
+
+
+
 
     
