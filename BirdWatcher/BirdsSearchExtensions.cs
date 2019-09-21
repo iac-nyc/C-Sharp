@@ -1,6 +1,5 @@
 using System.Collections.Generic;
 using System.Ling;
-
 namespace BirdWatcher
 {
     public class BirdSearch
@@ -21,16 +20,16 @@ namespace BirdWatcher
         {
             return source.Where(s => search.CommonName == null || s.CommonName.Contains(search.CommonName))
                          .Where(s => search.Country == null || s.Habitats.Any(h => h.Country.Contains(search.Country)))  
-                         .Where(s => search.Size == null || b.Size == search.Size)
+                         .Where(s => search.Size == null || s.Size == search.Size)
                          .Where(s => search.Colors.Any(c => c == s.PrimaryColor) ||
                                      search.Colors.Any(c => c == s.SecondaryColor) ||
                                      search.Colors.Join(s.TertiaryColors,
                                                         sc => sc,
                                                         tc => tc,
                                                         (sc,tc) => (sc)).Any())
-                         .Skip(page * pageSize)
-                         .Take(pageSize);
+                         .Skip(search.Page * search.PageSize)
+                         .Take(search.PageSize);
                 
         }
     }
-}.S
+}
